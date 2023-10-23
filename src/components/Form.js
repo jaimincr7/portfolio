@@ -63,7 +63,7 @@ const Form = () => {
       initial={{ x: "-10vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Message Me</h4>
       <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
@@ -115,7 +115,8 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button disabled={true} className="btn">{success ? "Message Sent" : "Message Me"}</button>
+        <a style={{color: 'red'}}>Currently Out of Service</a>
       </div>
     </motion.form>
   );

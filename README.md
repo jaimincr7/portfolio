@@ -9,7 +9,7 @@
 
   <br />
   <div align="center">
-    <a href="https://github.com/ajmoradiya6/my-portfolio">
+    <a href="https://github.com/JaiminMV/portfolio">
       <img src="src/images/logo.svg" alt="Logo" width="200" height="200">
     </a>
     <h3 align="center">My React Portfolio</h3>
@@ -20,14 +20,14 @@ This portfolio application was built using React and is designed to showcase my 
       Built by: Jaimin Vyas
       <br/>
       <br/>
-      <a href="https://github.com/ajmoradiya6/my-portfolio"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/JaiminMV/portfolio"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://akshaymoradiya.netlify.app/">View Live Website</a>
+      <a href="https://jaimin-manishkumar-vyas29.netlify.app/">View Live Website</a>
       ·
-      <a href="https://github.com/ajmoradiya6/my-portfolio/issues">Report Bug</a>
+      <a href="https://github.com/JaiminMV/portfolio/issues">Report Bug</a>
       ·
-      <a href="https://github.com/ajmoradiya6/my-portfolio/issues">Request Feature</a>
+      <a href="https://github.com/JaiminMV/portfolio/issues">Request Feature</a>
     </p>
   </div>
   
@@ -67,13 +67,13 @@ This portfolio application was built using React and is designed to showcase my 
   
   ### Photos
   
-[![My React Portfolio Screen Shot][product-screenshot]](https://akshaymoradiya.netlify.app/)
+[![My React Portfolio Screen Shot][product-screenshot]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
-[![My React Portfolio Screen Shot][product-screenshot2]](https://akshaymoradiya.netlify.app/)
+[![My React Portfolio Screen Shot][product-screenshot2]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
-[![My React Portfolio Screen Shot][product-screenshot3]](https://akshaymoradiya.netlify.app/)
+[![My React Portfolio Screen Shot][product-screenshot3]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
-[![My React Portfolio Screen Shot][product-screenshot4]](https://akshaymoradiya.netlify.app/)
+[![My React Portfolio Screen Shot][product-screenshot4]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -106,7 +106,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ajmoradiya6/my-portfolio.git
+   git clone https://github.com/JaiminMV/portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -122,13 +122,13 @@ To get a local copy up and running follow these simple example steps.
   
   - As demonstrated in the photos below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
   
-    [![Responsiveness Screenshot][responsive-screenshot]](https://akshaymoradiya.netlify.app/)
+    [![Responsiveness Screenshot][responsive-screenshot]](https://jaimin-manishkumar-vyas29.netlify.app/)
     
-    [![Responsiveness Screenshot][responsive-screenshot2]](https://akshaymoradiya.netlify.app/)
+    [![Responsiveness Screenshot][responsive-screenshot2]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
-    [![Responsiveness Screenshot][responsive-screenshot3]](https://akshaymoradiya.netlify.app/)
+    [![Responsiveness Screenshot][responsive-screenshot3]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
-    [![Responsiveness Screenshot][responsive-screenshot4]](https://akshaymoradiya.netlify.app/)
+    [![Responsiveness Screenshot][responsive-screenshot4]](https://jaimin-manishkumar-vyas29.netlify.app/)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -142,25 +142,25 @@ To get a local copy up and running follow these simple example steps.
 
 If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:ajmoradiya6@gmail.com">ajmoradiya6@gmail.com</a>
 
-<a href="https://www.linkedin.com/in/akshay-moradiya/">LinkedIn</a> | <a href="https://github.com/ajmoradiya6/">GitHub</a>
+<a href="https://www.linkedin.com/in/jaimin-vyas-b494715b/">LinkedIn</a> | <a href="https://github.com/ajmoradiya6/">GitHub</a>
 
-Project Link: [https://github.com/ajmoradiya6/my-portfolio](https://github.com/ajmoradiya6/my-portfolio)
+Project Link: [https://github.com/JaiminMV/portfolio](https://github.com/JaiminMV/portfolio)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/ajmoradiya6/my-portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/ajmoradiya6/my-portfolio/graphs/contributors
+[contributors-url]: https://github.com/JaiminMV/portfolio/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ajmoradiya6/my-portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/ajmoradiya6/my-portfolio/network/members
+[forks-url]: https://github.com/JaiminMV/portfolio/network/members
 [stars-shield]: https://img.shields.io/github/stars/ajmoradiya6/my-portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/ajmoradiya6/my-portfolio/stargazers
+[stars-url]: https://github.com/JaiminMV/portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ajmoradiya6/my-portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/ajmoradiya6/my-portfolio/issues
+[issues-url]: https://github.com/JaiminMV/portfolio/issues
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/akshay-moradiya
+[linkedin-url]: https://www.linkedin.com/in/jaimin-vyas-b494715b/
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
