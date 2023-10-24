@@ -140,9 +140,9 @@ To get a local copy up and running follow these simple example steps.
   
 ## Questions
 
-If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:ajmoradiya6@gmail.com">ajmoradiya6@gmail.com</a>
+If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:jaiminenter@gmail.com">jaiminenter@gmail.com</a>
 
-<a href="https://www.linkedin.com/in/jaimin-vyas-b494715b/">LinkedIn</a> | <a href="https://github.com/ajmoradiya6/">GitHub</a>
+<a href="https://www.linkedin.com/in/jaimin-vyas-b494715b/">LinkedIn</a> | <a href="https://github.com/JaiminMV/">GitHub</a>
 
 Project Link: [https://github.com/JaiminMV/portfolio](https://github.com/JaiminMV/portfolio)
 
