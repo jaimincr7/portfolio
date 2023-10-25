@@ -4,6 +4,7 @@ import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
+import OpenAI from "../pages/openAI/OpenAI";
 
 const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/open-ai" element={<OpenAI />} />
       <Route
         path="/contact"
         element={

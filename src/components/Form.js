@@ -116,7 +116,7 @@ const Form = () => {
       </div>
       <div className="col-12 formGroup formSubmit">
         <button disabled={true} className="btn">{success ? "Message Sent" : "Message Me"}</button>
-        <a style={{color: 'red'}}>Currently Out of Service</a>
+        {/* <a style={{color: 'red'}}>Currently Out of Service</a> */}
       </div>
     </motion.form>
   );
