@@ -100,10 +100,6 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                   <span>Availability:</span>
                   <p>{availability}</p>
                 </div>
-                <div className="col-12 col-md-6 info">
-                  <span>Map:</span>
-                  <div id="map" ref = {mapContainer} />
-                </div>
               </div>
             </div>
             <div className="buttonContainer">
