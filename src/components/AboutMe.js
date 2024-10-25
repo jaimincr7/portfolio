@@ -1,15 +1,38 @@
-import aboutMeImg from "../images/aboutme.jpeg";
+import aboutMeImg from "../images/aboutme.jpg";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import resume from "../pages/about/Jaimin-Vyas-Resume.pdf";
+import maplibregl from 'maplibre-gl';
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
+
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const lng = -118.1160397;
+  const lat = 33.7842682;
+  const zoom = 14;
+  const API_KEY = '9k5t2dO9IhuDwdAluTNu';
+
+  useEffect(() => {
+    if (map.current) return; // stops map from intializing more than once
+
+    map.current = new maplibregl.Map({
+      container: mapContainer.current,
+      style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${API_KEY}`,
+      center: [lng, lat],
+      zoom: zoom,
+      scrollZoom: true
+    });
+    new maplibregl.Marker({color: "#FF0000"})
+      .setLngLat([lng,lat])
+      .addTo(map.current);
+  }, [API_KEY, lng, lat, zoom]);
 
   const [downloading, setDownloading] = useState(false);
 
@@ -76,6 +99,10 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 <div className="col-12 col-md-6 info">
                   <span>Availability:</span>
                   <p>{availability}</p>
+                </div>
+                <div className="col-12 col-md-6 info">
+                  <span>Map:</span>
+                  <div id="map" ref = {mapContainer} />
                 </div>
               </div>
             </div>

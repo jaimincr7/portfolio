@@ -1,4 +1,9 @@
 /* --- MOBILE STYLES --- */
+#map {
+  height: 200px; /* Set a proper height */
+  width: 100%;   /* Ensure full width */
+  position: relative; /* Important for proper rendering */
+}
 
 .about {
   display: flex;
