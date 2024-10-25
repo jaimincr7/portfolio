@@ -4,37 +4,35 @@ import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import React, { useRef, useState, useEffect } from "react";
 import resume from "../pages/about/Jaimin-Vyas-Resume.pdf";
-import maplibregl from 'maplibre-gl';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
-const AboutMe = ({ name, email, location, availability, brand }) => {
+const AboutMe = ({ name, email, availability, brand }) => {
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
 
-  const mapContainer = useRef(null);
-  const map = useRef(null);
-  const lng = -118.1160397;
-  const lat = 33.7842682;
-  const zoom = 14;
-  const API_KEY = '9k5t2dO9IhuDwdAluTNu';
+  const [downloading, setDownloading] = useState(false);
+  const [location, setLocation] = useState([33.798189, -118.107136]);
+  const DefaultIcon = L.icon({
+    iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+  });
+  L.Marker.prototype.options.icon = DefaultIcon;
 
   useEffect(() => {
-    if (map.current) return; // stops map from intializing more than once
-
-    map.current = new maplibregl.Map({
-      container: mapContainer.current,
-      style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${API_KEY}`,
-      center: [lng, lat],
-      zoom: zoom,
-      scrollZoom: true
-    });
-    new maplibregl.Marker({color: "#FF0000"})
-      .setLngLat([lng,lat])
-      .addTo(map.current);
-  }, [API_KEY, lng, lat, zoom]);
-
-  const [downloading, setDownloading] = useState(false);
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setLocation([position.coords.latitude, position.coords.longitude]);
+      },
+      () => {
+        console.error("Error fetching location");
+      }
+    );
+  }, []);
 
   useEffect(() => {
     setDownloading(false);
@@ -74,7 +72,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>Full-Stack Software Developer who creates amazing digital experiences!</h5>
+            <h5>Software Developer at Oracle!</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -93,14 +91,28 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
               <div className="row">
                 <div className="col-12 col-md-6 info">
-                  <span>Location:</span>
-                  <p>{location}</p>
-                </div>
-                <div className="col-12 col-md-6 info">
                   <span>Availability:</span>
                   <p>{availability}</p>
                 </div>
+                <div className="col-12 col-md-6 info">
+
+                </div>
               </div>
+              <div className="col-12 col-md-6 info">
+                  <MapContainer
+                    center={location}
+                    zoom={13}
+                    style={{ height: "200px", width: "100%" }}
+                  >
+                    <TileLayer
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    />
+                    <Marker position={location}>
+                      <Popup>You are here</Popup>
+                    </Marker>
+                  </MapContainer>
+                </div>
             </div>
             <div className="buttonContainer">
               <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
