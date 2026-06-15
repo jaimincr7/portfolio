@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../../images/me.svg";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 
@@ -16,9 +15,13 @@ const Landing = ({ name }) => {
     landingImage: {
       position: "absolute",
       bottom: "0",
-      opacity: "0.3",
+      right: "0",
+      opacity: "0.25",
       mixBlendMode: "lighten",
-      height: "80%",
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      objectPosition: "center",
     },
 
     textContainer: {
@@ -38,6 +41,8 @@ const Landing = ({ name }) => {
       paddingBottom: "28px",
     },
   };
+
+  const backgroundImage = "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1920";
 
   return (
     <section className="landing" style={styles.landing}>
@@ -67,11 +72,11 @@ const Landing = ({ name }) => {
         <motion.img
           className="landingImage"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.4 }}
+          animate={{ opacity: 0.25 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingImage}
-          src={landingImage}
-          alt="Jaimin Vyas"
+          src={backgroundImage}
+          alt="Developer workspace"
         />
       </div>
       <SocialIcons />
