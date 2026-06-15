@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
+import landingImage from "../../images/Jaimin-Pic1.jpg";
 
 const Landing = ({ name }) => {
   const styles = {
@@ -42,8 +43,6 @@ const Landing = ({ name }) => {
     },
   };
 
-  const backgroundImage = "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1920";
-
   return (
     <section className="landing" style={styles.landing}>
       <Draw />
@@ -75,8 +74,8 @@ const Landing = ({ name }) => {
           animate={{ opacity: 0.25 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingImage}
-          src={backgroundImage}
-          alt="Developer workspace"
+          src={landingImage}
+          alt="Jaimin Vyas"
         />
       </div>
       <SocialIcons />
